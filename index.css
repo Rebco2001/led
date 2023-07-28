@@ -521,7 +521,5 @@ form input, form textarea{
         justify-content: center;
     }
 
-    body, header, nav{
-        width: 90vw;
-    }
+    
 }

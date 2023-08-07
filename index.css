@@ -372,12 +372,21 @@ h2{
     height: 300px;
     align-items: flex-start;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .bloc6 h2{
     width: 100%;
+}
+
+.box1{
+    width: 440px;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
 }
 
 .prestation_text {
@@ -399,20 +408,24 @@ h2{
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
-    position: absolute;
     height: 100%;
     top: 25%;
-    justify-content: flex-end;
-    left: 30%;
+    /*justify-content: flex-end;
+    left: 30%;*/
 }
 
 .prestation_images img{
-    width: 30%;
+    width: 200px;
     object-fit: cover;
-    margin:0vh 2vh;
+    margin:0vh 20px;
     max-width: 200px;
     border-radius: 8px;
     box-shadow: 2px 2px 8px 0px grey;
+}
+  
+.slider-1{
+    animation: slider-1 12s infinite ease-in-out;
+    display: flex;
 }
 
 
@@ -523,3 +536,28 @@ form input, form textarea{
 
     
 }
+
+
+/*keyframes*/
+
+@keyframes slider-1 {
+    0%,
+    20% {
+      transform: translateX(0);
+    }
+    25%,
+    45% {
+      transform: translateX(-30%);
+    }
+    50%,
+    70% {
+      transform: translateX(-60%);
+    }
+    75%,
+    95% {
+      transform: translateX(-90%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+} 

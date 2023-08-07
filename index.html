@@ -8,6 +8,10 @@
         <meta name="description" content="">
         
         <link rel="icon" type="image/png" sizes="16x16" href="">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         
         <link href="index.css" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/a0632bfd7d.js" crossorigin="anonymous"></script>
@@ -16,16 +20,17 @@
 
     <body>
         <header id="Accueil">
+            <div class="blanc_bleu"></div>
             <nav id="nave" href="javascript:void(0);" class="bag">
                 <div>
                     <p>DLS GROUP <br> 01.23.45.67.89</p>
                 </div>
 
                 <ul>
-                    <a href="#Accueil"><li>Accueil</li></a>
-                    <a href="#Gallerie"><li>Presentation</li></a>
-                    <a href="#A_Propos"><li>A propos</li></a>
-                    <a href="#Contact"><li>Nous Contacter</li></a>
+                    <a href="#Accueil"><li class="ok">Accueil</li></a>
+                    <a href="#Gallerie"><li class="ok">Presentation</li></a>
+                    <a href="#A_Propos"><li class="ok">A propos</li></a>
+                    <a href="#Contact"><li class="ok">Nous Contacter</li></a>
                 </ul>
             </nav>
             <div class="text_header">
@@ -146,32 +151,22 @@
 
         <article class="bloc4" id="Processus">
             <div class="sous_processus step1">
-                <icon></icon>
-                <p>La première étape
-                    est un échange approfondi
-                    sur votre idée.
-                    Ce brain-storming
-                    nous offre toute la matière première nécessaire
-                    pour vous aider à rendre ce moment inoubliable
-                </p>
+                <i class="fa-solid fa-1"></i>
+                <h4>Echange</h4>
+                <p>Physique ou à distance, comme vous préférez</p>
             </div>
 
             <div class="sous_processus step2">
-                <icon></icon>
-                <p>Ensuite un devis détaillé vous est
-                    envoyé.
-                    Nous restons à l'écoute si vous
-                    souhaitez le modifier, et l'accepter.   
+                <i class="fa-solid fa-2"></i>
+                <h4>Devis</h4>
+                <p>Nous restons à l'écoute si vous souhaitez le modifier, et l'accepter.   
                 </p>
             </div>
 
             <div class="sous_processus step3">
-                <icon></icon>
-                <p>Le jour de votre événement un technicien expert
-                    vous accompagne:
-                    Installation du matériel, explications de son
-                    fonctionnement, et tout ce dont vous aurez
-                    besoin!
+                <i class="fa-solid fa-3"></i>
+                <h4>Accompagnement</h4>
+                <p>Installation du matériel, explications de son fonctionnement, et tout ce dont vous aurez besoin!
                 </p>
             </div>
         </article>
@@ -240,12 +235,6 @@
                     <img class ="mySlides" src="location_ecran_led_paris.jpg">
                     <img class ="mySlides" src="location_ecran_led.jpg" >
                     <img class ="mySlides" src="location_ecran_led_paris.jpg" >
-                    <img class ="mySlides" src="location_ecran_led_paris.jpg">
-                    <img class ="mySlides" src="location_ecran_led.jpg" >
-                    <img class ="mySlides" src="location_ecran_led_paris.jpg" >
-                    <img class ="mySlides" src="location_ecran_led.jpg" >
-                    <img class ="mySlides" src="location_ecran_led_paris.jpg">
-                    <img class ="mySlides" src="location_ecran_led.jpg" >
                 </div>
             </div>
         </article>
@@ -265,33 +254,23 @@
 
             <form method="get" class="cart__order__form">
                 <div class="cart__order__form__question">
-                    <label for="firstName">Prénom:* </label>
-                    <input type="text" name="firstName" id="firstName" required>
-                    <p id="firstNameErrorMsg"></p>
-                </div>
-                <div class="cart__order__form__question">
-                    <label for="lastName">Nom:* </label>
-                    <input type="text" name="lastName" id="lastName" required>
+                    <input type="text" name="lastName" id="lastName" required placeholder="Nom ou société">
                     <p id="lastNameErrorMsg"></p>
                 </div>
-                <div class="cart__order__form__question">
-                    <label for="address">Tel:* </label>
-                    <input type="tel" name="tel" id="tel" required>
+                <div class="cart__order__form__question form2">
+                    <input type="tel" name="tel" id="tel" required placeholder="Téléphone">
                     <p id="telErrorMsg"></p>
                 </div>
-                <div class="cart__order__form__question">
-                    <label for="email">Email:* </label>
-                    <input type="email" name="email" id="email" required>
+                <div class="cart__order__form__question form3">
+                    <input type="email" name="email" id="email" required placeholder="Adresse mail">
                     <p id="emailErrorMsg"></p>
                 </div>
                 <div class="cart__order__form__question">
-                    <label for="city">Ville:* </label>
-                    <input type="text" name="city" id="city" required>
+                    <input type="text" name="city" id="city" required placeholder="Ville">
                     <p id="cityErrorMsg"></p>
                 </div>
                 <div class="cart__order__form__question">
-                    <label for="object">Message:* </label>
-                    <textarea type="text" name="object" id="object"></textarea>
+                    <textarea type="text" name="object" id="object" placeholder="Laissez votre message ici"></textarea>
                 </div>
                 <div class="cart__order__form__submit">
                     <input type="submit" value="ENVOYER" id="order">
@@ -366,14 +345,27 @@
             
             const navbar = document.getElementById("nave");
             const changement = document.getElementsByClassName('bloc1')[0].offsetTop;
+            const mli0 = document.getElementsByClassName('ok')[0];
+            const mli1 = document.getElementsByClassName('ok')[1];
+            const mli2 = document.getElementsByClassName('ok')[2];
+            const mli3 = document.getElementsByClassName('ok')[3];
 
             document.addEventListener("scroll", () =>{                
                 if (window.scrollY > changement-100){
                     navbar.classList.add('nav-loaded');
+                    mli0.classList.add('li-loaded');
+                    mli1.classList.add('li-loaded');
+                    mli2.classList.add('li-loaded');
+                    mli3.classList.add('li-loaded');
 
                 }
                 else{
                     navbar.classList.remove('nav-loaded');
+                    mli0.classList.remove('li-loaded');
+                    mli1.classList.remove('li-loaded');
+                    mli2.classList.remove('li-loaded');
+                    mli3.classList.remove('li-loaded');
+
                 }
             })
 

@@ -10,7 +10,8 @@ a{
 }
 
 p{
-    font-size: 15px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
 
 }
 
@@ -18,7 +19,7 @@ h1{
     font-size: 25px;
     font-weight: bolder;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     width: 90%;
     margin: auto;
 }
@@ -36,6 +37,7 @@ body{
     justify-content: center;
     overflow-x: hidden; 
     width: 100vw; 
+    font-family: 'Nunito', sans-serif;
 }
 
 article{
@@ -65,6 +67,14 @@ button:hover{
 /*MENU*/
 /******/
 
+.blanc_bleu{    
+    height: 2vh;
+    background-color: #a7d0e7;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+
 header{
     height: 100vh;
     width: 100vw;
@@ -77,13 +87,14 @@ header{
 }
 
 nav {
+    top: 2vh;
     display: flex;
     flex-direction: row;
     position: fixed;
     width: 100vw;
     font-weight: bolder;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: 'Nunito';
     z-index: 1000;
     color: white;
     background-color: rgb(0, 0, 0, 0.5);
@@ -120,13 +131,17 @@ ul {
 }
 
 li:hover{
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid white;
 }
 
 li{
     margin: 0px 30px;
     padding-bottom: 10px;
     border-bottom: 3px solid transparent;
+}
+
+.li-loaded:hover{
+    border-bottom: 3px solid black;
 }
 
 .text_header{
@@ -297,6 +312,7 @@ section p{
 
 .sous_processus{
     display: flex;
+    flex-direction: column;
     width: 20vw;
     min-height: 30vh;
     padding: 2vh 5vw;
@@ -308,7 +324,22 @@ section p{
     min-width: 300px;
 }
 
-.step1{
+.sous_processus i{
+    color: #2DC1F463;
+    font-size: 5em;
+}
+
+.sous_processus h4{
+    font-size: 2em;
+    line-height: 30px;
+}
+
+.sous_processus p{
+    font-size: 20px;
+    min-height: 100px;
+}
+
+/*.step1{
     background: linear-gradient(to right, white, #5FCAF8);
 }
 
@@ -318,7 +349,7 @@ section p{
 
 .step3{
     background: linear-gradient(to right, #82CDEE, #4E6597);
-}
+}*/
 
 
 /*************/
@@ -351,6 +382,7 @@ h2{
 .chiffres{
     width: 30%;
     min-width: 300px;
+    margin: auto;
 }
 
 .bloc5 img{
@@ -400,7 +432,7 @@ h2{
 }
 
 .prestation_text p{
-    font-size: 15px;
+    
 }
 
 .prestation_images {
@@ -450,8 +482,12 @@ h2{
 
 
 form{
-    width: 100%;
+    width: 80%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 form div {
@@ -460,32 +496,43 @@ form div {
     justify-content: center;
     height: 10vh;
     margin-bottom: 2vh;
-}
-
-form label{
-    width: 80%;
-    text-align: left;
-    font-weight: bolder;
+    width: 100%;
 }
 
 form input, form textarea{
     border: none;
-    width: 80%;
-    border-bottom: 5px solid grey;
+    width: 100%;
+    border-radius: 8px;
+    padding-left: 10px;
+    height: 45px;
+}
+
+form textarea{
+    padding-top: 10px;
+    font-family: 'Nunito';
+}
+
+.form2, .form3{
+    width: 48%;
 }
 
 #order{
     width: auto;
-    border: #4E6597;
-    padding: 0vh 2vh;
+    padding: 2vh 4vh;
+    background:radial-gradient(at 0% 0%,#4E6597, #4E6597, #82CEEF);
+    color: white;
 }
 
 .cart__order__form__submit {
     display: flex;
-    justify-content: flex-end;
-    width: 80%;
+    justify-content: center;
+    width: 100%;
     position: relative;
-    left: 10%;
+
+}
+
+#order:hover{
+    font-weight: bolder;
 }
 
 
@@ -547,17 +594,17 @@ form input, form textarea{
     }
     25%,
     45% {
-      transform: translateX(-30%);
+      transform: translateX(-240px);
     }
     50%,
     70% {
-      transform: translateX(-60%);
+      transform: translateX(-480px);
     }
     75%,
     95% {
-      transform: translateX(-90%);
+      transform: translateX(-720px);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-960px);
     }
 } 

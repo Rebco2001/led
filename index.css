@@ -524,6 +524,7 @@ form textarea{
 
 .form2, .form3{
     width: 48%;
+    min-width: 250px;
 }
 
 #order{

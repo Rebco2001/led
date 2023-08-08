@@ -68,11 +68,16 @@ button:hover{
 /******/
 
 .blanc_bleu{    
-    height: 2vh;
-    background-color: #a7d0e7;
+    height: 5vh;
+    background:radial-gradient(at 0% 0%,#4E6597, #82CEEF);
     position: fixed;
     width: 100%;
     z-index: 10000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
 }
 
 header{
@@ -87,7 +92,7 @@ header{
 }
 
 nav {
-    top: 2vh;
+    top: 5vh;
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -324,6 +329,10 @@ section p{
     min-width: 300px;
 }
 
+.sous_processus:hover{
+    background: radial-gradient(#4E6597 0%, #82CEEF 10%, #ffffff 25%);
+}
+
 .sous_processus i{
     color: #2DC1F463;
     font-size: 5em;
@@ -331,7 +340,7 @@ section p{
 
 .sous_processus h4{
     font-size: 2em;
-    line-height: 30px;
+    margin: 20px;
 }
 
 .sous_processus p{

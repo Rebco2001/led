@@ -330,7 +330,7 @@ section p{
 }
 
 .sous_processus:hover{
-    background: radial-gradient(#4E6597 0%, #82CEEF 10%, #ffffff 25%);
+    background: radial-gradient(#ffffff 0%, #b5e3f7 15%, #b5e3f7 20%, #ffffff 30%);
 }
 
 .sous_processus i{
@@ -415,6 +415,7 @@ h2{
     position: relative;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 100vw;
 }
 
 .bloc6 h2{

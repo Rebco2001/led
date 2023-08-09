@@ -574,6 +574,7 @@ form textarea{
 
     .prestation_images{
         width: 220px;
+        height: auto;
     }
 
     .prestation_text {
@@ -620,6 +621,10 @@ form textarea{
     nav{
         position: relative;
         top: 0vh;
+    }
+
+    .bloc6{
+        height: auto;
     }
 
     

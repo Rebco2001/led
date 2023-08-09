@@ -613,6 +613,15 @@ form textarea{
         min-width: 300px;
     }
 
+    .blanc_bleu{
+        position: relative;
+    }
+
+    nav{
+        position: relative;
+        top: 0vh;
+    }
+
     
 }
 

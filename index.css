@@ -574,7 +574,7 @@ form textarea{
 
     .prestation_images{
         width: 220px;
-        height: auto;
+        height: 250px;
     }
 
     .prestation_text {
@@ -625,6 +625,10 @@ form textarea{
 
     .bloc6{
         height: auto;
+    }
+
+    .text_header{
+        top: 50vh;
     }
 
     

@@ -213,6 +213,7 @@ img:checked{
     height: 35vh;
     object-fit: cover;
     transition: width 1s, height 1s, transform 1s;
+    min-width: 300px;
 }
 
 .sous_presentation img:hover{
@@ -233,11 +234,12 @@ img:checked{
 
 section{
     width: 40vw;
-    height: 45vh;
+    min-height: 45vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-width: 300px;
 }
 
 section p{
@@ -275,6 +277,8 @@ section p{
 .bloc_button2{
     display: flex;
     flex-direction: column;
+    min-width: 300px;
+    align-items: center;
 }
 
 .bloc_button2 button{
@@ -565,15 +569,19 @@ form textarea{
     }
 
     .prestation_images img {
-        width: 55%;
+        width: 240px;
     }
 
     .prestation_images{
-        width: 55%;
+        width: 220px;
     }
 
-    .prestation_text{
-        width: 40%;
+    .prestation_text {
+        min-width: 300px;
+        left: 0px;
+        right: 0px;
+        align-items: center;
+        justify-content: center;
     }
 
     .bloc3, .sous_a_propos,.sous_information {
@@ -590,6 +598,19 @@ form textarea{
 
     .bloc4{
         justify-content: center;
+    }
+
+    .presentation_Led{
+        flex-direction: column-reverse;
+    }
+
+    .sous_presentation img{
+        right: 0vw;
+        left: 0vw;
+    }
+
+    .bloc{
+        min-width: 300px;
     }
 
     

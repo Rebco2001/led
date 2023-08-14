@@ -1,0 +1,12 @@
+
+.blanc_bleu{
+    background-color: blueviolet;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+}
+
+.blanc_bleu p{
+    margin:0;
+}

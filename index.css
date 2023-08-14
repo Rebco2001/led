@@ -57,10 +57,13 @@ button{
     text-transform: uppercase;
     color: rgb(61, 61, 61);
     margin: 0px 10px 0px 0px ;
+    font-weight: 600;
 }
 
+
 button:hover{
-    font-weight: bolder;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px grey;
 }
 
 /******/
@@ -171,6 +174,10 @@ li{
     background:radial-gradient(at 0% 0%,#4E6597, #4E6597, #82CEEF);
 }
 
+#Plasma{
+    background: radial-gradient(at 0% 0%,grey, rgb(217, 216, 216), rgb(232, 230, 230));
+}
+
 .gallerie_Plasma{
     display: none;
 }
@@ -271,13 +278,15 @@ section p{
 .sous_a_propos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+    width: 70vw;
 }
 
 .bloc_button2{
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    width: 10vw;
+    min-width: 200px;
     align-items: center;
 }
 
@@ -292,13 +301,25 @@ section p{
     align-items: center;
 }
 
+.valeurs{
+    display: none;
+}
+
 .bloc3 i{
     font-size: xx-large;
 }
 
 .bloc{
-    width: 30vh;
+    width: 45%;
     margin: 0vh 3vh;
+}
+
+.big_div{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 70vw;
+    min-width: 400px;
 }
 
 #Avantages{
@@ -524,6 +545,8 @@ form input, form textarea{
 form textarea{
     padding-top: 10px;
     font-family: 'Nunito';
+    resize: none;
+    height: 70px;;
 }
 
 .form2, .form3{
@@ -543,11 +566,93 @@ form textarea{
     justify-content: center;
     width: 100%;
     position: relative;
+    top: 20px;
 
 }
 
 #order:hover{
     font-weight: bolder;
+}
+
+
+/********/
+/*footer*/
+/********/
+
+footer{
+    background: linear-gradient(#212b42 , #4E6597);
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0px 0px 0px;
+}
+
+.sous_footer{
+    width: 45vw;
+    min-width: 300px;
+}
+
+.footer_1{
+    text-align: left;
+    padding: 0 0 0 40px;
+}
+
+.footer_1 p{
+    font-size: large;
+}
+
+.footer_2{
+    text-align: right;
+    padding: 0 40px 0 0;
+}
+
+
+footer h5{
+    width: 80vw;
+    margin: 30px auto;
+}
+
+footer p{
+    margin: 8px;
+    padding: 0;
+}
+
+.sous_footer i{
+    color: #E7CBCD;
+}
+
+#tel_footer{
+    display: none;
+}
+
+
+
+/**************/
+/*sur-tablette*/
+/**************/
+
+@media (max-width: 1000px) { 
+    .big_div{
+        width: auto;
+        min-width: auto;
+        flex-direction: column;
+    }
+
+    .bloc{
+        width: 100%;
+        margin: auto;
+    }
+
+    .bloc3{
+        justify-content: center;
+    }
+
+    button{
+        margin: 0;
+    }
 }
 
 
@@ -631,6 +736,18 @@ form textarea{
         top: 50vh;
     }
 
+    .footer_2 {
+        text-align: left;
+        padding: 0 0 0 40px;
+    }
+
+    #ordi{
+        display: none;
+    }
+
+    #tel{
+        display: block;
+    }
     
 }
 

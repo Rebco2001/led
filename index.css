@@ -147,6 +147,7 @@ li{
     margin: 0px 30px;
     padding-bottom: 10px;
     border-bottom: 3px solid transparent;
+    list-style: none;
 }
 
 .li-loaded:hover{
@@ -391,17 +392,6 @@ section p{
     min-height: 100px;
 }
 
-/*.step1{
-    background: linear-gradient(to right, white, #5FCAF8);
-}
-
-.step2{
-    background: linear-gradient(to right, #5FCAF8, #82CDEE);
-}
-
-.step3{
-    background: linear-gradient(to right, #82CDEE, #4E6597);
-}*/
 
 
 /*************/
@@ -501,6 +491,7 @@ h2{
 
 .prestation_images img{
     width: 200px;
+    height: 300px;
     object-fit: cover;
     margin:0vh 20px;
     max-width: 200px;
@@ -628,7 +619,7 @@ footer{
 }
 
 
-footer h5{
+footer h4{
     width: 80vw;
     margin: 30px auto;
 }
@@ -728,7 +719,7 @@ footer p{
         width: 220px;
         height: 350px;
         position: relative;
-        top: 50px;
+        top: 100px;
     }
 
     .prestation_text {

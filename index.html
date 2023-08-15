@@ -27,8 +27,8 @@
                 </div>
 
                 <ul>
-                    <a href="#Accueil"><li class="ok">Accueil</li></a>
-                    <a href="#Gallerie"><li class="ok">Presentation</li></a>
+                    <a href="#Accueil" class="scroll-link"><li class="ok">Accueil</li></a>
+                    <a href="#Gallerie" class="scroll-link"><li class="ok">Presentation</li></a>
                     <a href="#A_Propos"><li class="ok">A propos</li></a>
                     <a href="#Contact"><li class="ok">Nous Contacter</li></a>
                 </ul>
@@ -171,10 +171,10 @@
         <article class="bloc5" id="Information">
             <div class="sous_information">
                 <h2>Les chiffres clés de DLS GROUP</h2>
-                <div class="chiffres">
-                    <i class="fa-solid fa-house"></i>
-                    <h3>Economies générées</h3>
-                    <p>+15% d’économies générées vs les tarifs proposés par les autres sociétés de dépannage</p>
+                  <div class="chiffres">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Expérience</h3>
+                    <p>27 ans d'expérience</p>
                   </div>
                   <div class="chiffres">
                     <i class="fa-solid fa-coins"></i>
@@ -182,24 +182,20 @@
                     <p>100% de satisfaction</p>
                   </div>
                   <div class="chiffres">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <h3>Interventions</h3>
-                    <p>+5.000 interventions depuis sa création</p>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h3>Evenements</h3>
+                    <p>+1.300 interventions depuis sa création</p>
                   </div>
                   <div class="chiffres">
                     <i class="fa-solid fa-thumbs-up"></i>
-                    <h3>Leader</h3>
-                    <p>Nous sommes leader dans le dépannage sous contrat</p>
+                    <h3>Projet</h3>
+                    <p>+2K de projets réalisés</p>
                   </div>
-                  <div class="chiffres">
-                    <i class="fa-solid fa-feather"></i>
-                    <h3>de Confiance</h3>
-                    <p>Nous travaillons avec +50 entreprises françaises</p>
-                  </div>
+                  
                   <div class="chiffres">
                     <i class="fa-solid fa-earth-americas"></i>
                     <h3>Global</h3>
-                    <p>Loyaux Services couvre toute l’Île-de-France</p>
+                    <p>DLS GROUP couvre toute l’Île-de-France et les grandes villes françaises</p>
                   </div>
             </div>
 
@@ -209,18 +205,10 @@
         </article>
 
         <article class="bloc6" id="Prestation">
-            <h2>Quelques prestations...</h2>
+            <h2>Découvrez Nos Prestations d'Écrans LED et Plasma</h2>
             <div class="prestation_text">
                 <p>
-                    Les écrans LED, également connus
-                    sousle nom d'écrans à diodes
-                    électroluminescentes,sont
-                    devenus une technologie
-                    largement utilisée dans de
-                    nombreux domaines. Leur
-                    utilisation dansles prestations
-                    visuelles offre des avantages
-                    indéniables.
+                    Élevez votre événement avec nos prestations de location d'écrans LED et plasma. Bénéficiez d'une qualité visuelle exceptionnelle et d'une équipe technique dédiée pour une expérience sans pareil. Faites briller vos présentations, conférences et spectacles grâce à nos solutions innovantes.
                 </p>
             </div>
             <div class="prestation_images box1">
@@ -236,14 +224,12 @@
 
         <article class="bloc7" id="Contact">
             <div>
-                <h3>Vous avez la possibilité d’opter pour une large gamme de services</h3>
+                <h3>Amplifiez l'Impact Visuel : Location d'Écrans LED et Plasma pour des Moments Mémorabless</h3>
                 <p>
-                    Simple location d’un écran LED haute définition ou prestation clés en main, nous intervenons dans différentstypes de contextes. En intérieur, en
-                    extérieur, partemps maussade, etc.
-                    Détaillez-nous,si possible, votre demande avec la date de votre événement, la durée de location, le lieu et la taille souhaitée de l'écran (si vous la
-                    connaissez).
-                    Avec une grande expérience derrière nous, nous saurons vous conseiller de la meilleure des manièressur ce dont vous avez besoin. Nous sommes réactifs,
-                    nous répondrons à toutes vos questions très rapidement !
+                    Prêt à donner vie à votre événement avec des visuels époustouflants ? 
+                    <br>Notre service de location d'écrans LED et plasma vous offre la possibilité d'offrir une expérience visuelle inégalée.
+                    <br>Remplissez le formulaire ci-dessous pour obtenir plus d'informations sur nos tarifs et nos disponibilités. 
+                    <br>Laissez-nous vous aider à créer un événement mémorable et captivant grâce à nos solutions d'affichage de pointe.
                 </p>
             </div>
 
@@ -343,7 +329,7 @@
             const mli3 = document.getElementsByClassName('ok')[3];
 
             document.addEventListener("scroll", () =>{                
-                if (window.scrollY > changement-100){
+                if (window.scrollY > changement-150){
                     navbar.classList.add('nav-loaded');
                     mli0.classList.add('li-loaded');
                     mli1.classList.add('li-loaded');
@@ -360,6 +346,27 @@
 
                 }
             })
+
+            document.addEventListener('DOMContentLoaded', function() {
+                // Ajouter un événement au clic sur les liens
+                document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    // Obtenir la cible de l'ancre (l'élément avec l'ID)
+                    var target = document.querySelector(this.getAttribute('href'));
+
+                    // Obtenir la hauteur de l'en-tête ou de la barre de navigation fixe
+                    var headerHeight = 130; // Ajustez cette valeur selon la hauteur réelle
+
+                    // Faire défiler la vue avec le décalage vers le haut
+                    window.scrollTo({
+                    top: target.offsetTop - headerHeight,
+                    behavior: 'smooth'
+                    });
+                });
+                });
+            });
 
                 
         </script>

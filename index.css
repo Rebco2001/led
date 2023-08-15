@@ -679,7 +679,9 @@ footer p{
 
     .prestation_images{
         width: 220px;
-        height: 250px;
+        height: 350px;
+        position: relative;
+        top: 50px;
     }
 
     .prestation_text {
@@ -756,22 +758,23 @@ footer p{
 
 @keyframes slider-1 {
     0%,
-    20% {
+    14% {
       transform: translateX(0);
     }
-    25%,
-    45% {
+    18%,
+    32% {
       transform: translateX(-240px);
     }
-    50%,
-    70% {
+    36%,
+    50% {
       transform: translateX(-480px);
     }
-    75%,
-    95% {
+    54%,
+    68% {
       transform: translateX(-720px);
     }
-    100% {
+    72%,
+    86% {
       transform: translateX(-960px);
     }
 } 

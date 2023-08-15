@@ -86,7 +86,7 @@ button:hover{
 header{
     height: 100vh;
     width: 100vw;
-    background-image: url(location_ecran_led_paris.png);
+    background-image: url(location-ecran-led-paris.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;

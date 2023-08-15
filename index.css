@@ -634,7 +634,11 @@ footer p{
 /*sur-tablette*/
 /**************/
 
-@media (max-width: 1000px) { 
+@media (max-width: 1000px) {
+    ul{
+        display: none;
+    }
+
     .big_div{
         width: auto;
         min-width: auto;
@@ -653,6 +657,30 @@ footer p{
     button{
         margin: 0;
     }
+
+    .sous_information{
+        width: 85%;
+    }
+
+    .chiffres{
+        min-width: 150px;
+    }
+
+    section{
+        width: 90%;
+    }
+
+    .sous_presentation img{
+        width: 80%;
+    }
+
+    .text_header{
+        top: 80vh;
+    }
+
+    .presentation_Led{
+        flex-direction: column-reverse;
+    }
 }
 
 
@@ -660,10 +688,7 @@ footer p{
 /*sur-tel*/
 /********/
 
-@media (max-width: 770px) { 
-    ul{
-        display: none;
-    }
+@media (max-width: 500px) { 
 
     .bloc5{
         flex-direction: column;
@@ -708,10 +733,6 @@ footer p{
         justify-content: center;
     }
 
-    .presentation_Led{
-        flex-direction: column-reverse;
-    }
-
     .sous_presentation img{
         right: 0vw;
         left: 0vw;
@@ -747,7 +768,7 @@ footer p{
         display: none;
     }
 
-    #tel{
+    #tel_footer{
         display: block;
     }
     

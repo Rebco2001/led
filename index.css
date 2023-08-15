@@ -107,6 +107,7 @@ nav {
     color: white;
     background-color: rgb(0, 0, 0, 0.5);
     transition: background-color 1ms ease;
+    align-items: center;
 }
 
 .nav-loaded {
@@ -155,6 +156,22 @@ li{
 .text_header{
     position: relative;
     top: 80vh;
+}
+
+header button{
+    padding: 20px 0px;
+    width: 25vh;
+    height: min-content;
+    border-radius: 8px;
+    margin: 0px 10px 0px 0px;
+    max-width: 40vw;
+    color: white;
+    background: radial-gradient(at 0% 0%,#4E6597, #4E6597, #82CEEF);
+    z-index: 100000;
+}
+
+#Devis{
+    display: none;
 }
 
 /**********/
@@ -681,6 +698,10 @@ footer p{
 
     .presentation_Led{
         flex-direction: column-reverse;
+    }
+
+    #Devis{
+        display: flex;
     }
 }
 

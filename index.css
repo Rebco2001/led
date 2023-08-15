@@ -190,6 +190,7 @@ li{
     height: 25vw;
     min-width: 300px;
     min-height: 350px;
+    object-fit: cover;
 }
 
 img:checked{

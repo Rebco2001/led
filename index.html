@@ -247,23 +247,28 @@
 
             <form method="get" class="cart__order__form" id="Form">
                 <div class="cart__order__form__question form2">
+                    <label for="lastName">Nom ou société</label>
                     <input type="text" name="lastName" id="lastName" required placeholder="Nom ou société">
                     <p id="lastNameErrorMsg"></p>
                 </div>
                 <div class="cart__order__form__question form3">
+                    <label for="city">Ville</label>
                     <input type="text" name="city" id="city" required placeholder="Ville">
                     <p id="cityErrorMsg"></p>
                 </div>
                 <div class="cart__order__form__question form2">
+                    <label for="tel">Téléphone</label>
                     <input type="tel" name="tel" id="tel" required placeholder="Téléphone">
                     <p id="telErrorMsg"></p>
                 </div>
                 <div class="cart__order__form__question form3">
+                    <label for="email">Adresse mail</label>
                     <input type="email" name="email" id="email" required placeholder="Adresse mail">
                     <p id="emailErrorMsg"></p>
                 </div>
                 <div class="cart__order__form__question">
-                    <textarea type="text" name="object" id="object" placeholder="Demande de devis pour location écran LED et plasma à Paris"></textarea>
+                    <label for="object">Demande de devis pour location écran LED et plasma à Paris</label>
+                    <textarea type="text" name="object" id="object" placeholder="Demande de devis pour location écran LED et plasma à Paris"></textarea>        
                 </div>
                 <div class="cart__order__form__submit">
                     <input type="submit" value="ENVOYER" id="order">

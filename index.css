@@ -84,14 +84,21 @@ button:hover{
 }
 
 header{
-    height: 100vh;
     width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    height: 100vh;
     background-image: url(location-ecran-led-paris.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    margin: 0px;
-    padding: 0px;
+}
+
+.header_2{
+    height: 20vh;
 }
 
 nav {
@@ -221,6 +228,29 @@ img:checked{
     border-bottom: 1px solid black;
 }
 
+.gallerie_2 button{
+    padding: 20px 0px;
+    width: 25vh;
+    border-radius: 8px;
+    margin: 0px 10px 0px 0px;
+    max-width: 40vw;
+}
+
+.gallerie_2 img {
+    width: 20vw;
+    border-radius: 8%;
+    margin: 2px;
+    margin-top: 10px;
+    height: 25vw;
+    min-width: 300px;
+    min-height: 350px;
+    object-fit: cover;
+}
+
+.gallerie_2 .bloc_button {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
 
 /**************/
 /*Presentation*/
@@ -762,6 +792,9 @@ footer p{
 
     .blanc_bleu{
         position: relative;
+        padding: 2%;
+        width: 96%;
+
     }
 
     nav{
@@ -817,3 +850,54 @@ footer p{
       transform: translateX(-960px);
     }
 } 
+
+
+/*pages interieures*/
+
+.bloc_articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.articles {
+    width: 30%;
+}
+
+.section_2{
+    width: 90%;
+}
+
+.articles button:hover {
+    font-weight: bolder;
+}
+
+.articles button {
+    width: auto;
+    padding: 2vh 4vh;
+    background: radial-gradient(at 0% 0%,#4E6597, #4E6597, #82CEEF);
+    color: white;
+}
+
+@media (max-width: 1000px) { 
+    .bloc_articles .articles {
+        width: 50%;
+    }
+    
+}
+@media (max-width: 500px) { 
+    .bloc_articles .articles {
+        width: 100%;
+    }
+    
+}
+
+*{
+    transition: width 1s, height 1s, transform 1s;
+}
+
+img:hover {
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}

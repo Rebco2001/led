@@ -504,10 +504,6 @@ h2{
     left: 3vh;
 }
 
-.prestation_text p{
-    
-}
-
 .prestation_images {
     width: 65%;
     display: flex;
@@ -900,4 +896,47 @@ img:hover {
     -ms-transform: scale(1.15);
     -webkit-transform: scale(1.15);
     transform: scale(1.15);
+}
+
+
+#menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 1000px) {
+    #menu-toggle {
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 10vh;
+        color: black;
+        height: 80vh;
+    }
+    ul.active {
+        display: flex;
+    }
+
+    ul.active li {
+        margin: 0px 30px;
+        padding-bottom: 0px;
+        height: 5vh;
+        border-bottom: 3px solid black;
+        list-style: none;
+        width: 50%;
+        margin-bottom: 40px;
+    }
 }

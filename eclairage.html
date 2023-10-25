@@ -10,7 +10,7 @@
         <meta name="description" content="DLS GROUP propose la location d'écran LED et plasma   pour des événements exceptionnels. Élevez l'impact visuel de vos événements avec nos écrans LED et plasma de haute qualité. Obtenez un devis dès maintenant!">
 
         
-        <link rel="icon" type="image/png" sizes="16x16" href="">
+        <link rel="icon" type="image/png" sizes="16x16" href="dls_logo_mini.png">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,20 +23,24 @@
 
     <body>
         <header id="Accueil" class="header_2">
-            <div class="blanc_bleu">AGENCE DE LOCATION ECRAN LED ET PLASMA  </div>
+            <div class="blanc_bleu">AGENCE DE LOCATION MATERIELS EVENEMENTIELS  </div>
             <nav id="nave" href="javascript:void(0);" class="bag nav-loaded">
                 <div>
-                    <p>DLS GROUP <br> 01.23.45.67.89</p>
+                    <p>DLS GROUP <br> 06.95.16.46.55</p>
                 </div>
 
-                <ul>
+                <div id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul id="menu">
                     <li class="ok"><a href="test.html" class="scroll-link">Accueil</a></li>
                     <li class="ok"><a href="led.html" class="scroll-link">Led</a></li>
                     <li class="ok"><a href="son.html">Sonorisation</a></li>
                     <li class="ok"><a href="eclairage.html">Eclairage</a></li>
                     <li class="ok"><a href="effets.html">Effets</a></li>
                     <li class="ok"><a href="contact.html">Contact</a></li>
-
                 </ul>
             </nav>
         </header>
@@ -138,6 +142,22 @@ Nos techniciens spécialistes de l’audiovisuel interviendront sur votre site �
             </div>
         </article>
 
+        <article class="bloc2">
+            <div class="gallerie" id="Gallerie">
+                <h2>Nos prestations de location d'éclairage</h2>
+                <div class="sous_gallerie">
+                    <i></i>
+                    <img src="lum_1.jpeg">
+                    <img src="lum_2.jpeg">
+                    <img src="lum_3.jpeg">
+                    <img src="lum_4.jpeg">
+                    <img src="lum_5.jpeg">
+                    <img src="lum_6.jpeg">
+                    <i></i>
+                </div>
+            </div>
+        </article>
+
 
 
         <footer>
@@ -145,14 +165,20 @@ Nos techniciens spécialistes de l’audiovisuel interviendront sur votre site �
                 <p>DLS GROUP</p>
             </div>
             <div class="sous_footer footer_2">
-                <p href="mailto:dls-group26@gmail.com"><i class="fa-solid fa-envelope"></i> dls-group26@gmail.com</p>
+                <p href="mailto:dlsmurdeled@gmail.com"><i class="fa-solid fa-envelope"></i> dls-group26@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i> 06.12.34.56.78</p>
-                <p>SIREN: 123456789123</p>
+                <p>SIREN: 899555627</p>
             </div>
             <h4 id="ordi">DLS GROUP | <i class="fa-regular fa-copyright"></i> copyright 2023-2033 | site conçu et realisé par Rebecca Negozio</h4>
             <h4 id="tel_footer">DLS GROUP | <i class="fa-regular fa-copyright"></i> copyright 2023-2033 <br> site conçu et realisé par Rebecca Negozio</h4>
         </footer>
         <script>
+
+            document.getElementById("menu-toggle").addEventListener("click", function () {
+                var menu = document.getElementById("menu");
+                menu.classList.toggle("active");
+            });
+
             var led = document.getElementById("Led");
             var plasma = document.getElementById("Plasma");
             var d1 = document.getElementsByClassName("gallerie_Led")[0];
